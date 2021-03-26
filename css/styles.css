@@ -21,30 +21,24 @@ h1{
 /* Classes*/
 .title{
     font-size: 18px;
-    font-family: monospace; /*this won't be applied because #page-title has higher priority*/
+    font-family: monospace;
 }
-.blog{
-    background-color: aqua; /*this won't be applied because #main-nav .blog has higher priority*/
+.nav .blog{
+    background-color: aqua; /*This has higher priority, 2 Classes > 1 Class + 1 Tag*/
 }
-/* IDs */
-#page-title{
-    font-family: Arial, Helvetica, sans-serif;
-}
-#main-nav{
+.nav{
+    width: 100%;
+    height: 30px;
     margin-top: 10px;
     list-style-type: none;
     padding-left: 0;
 }
 
 /* Elements */
-#main-nav li{
+.nav li{
     display: inline-block;
 }
-#main-nav a{
+.nav a{
     color: white;
     background-color: violet;
-}
-
-#main-nav .blog{
-    background-color: teal;
 }
